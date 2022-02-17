@@ -1,0 +1,133 @@
+/* Mise en place du body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  'Open Sans',Arial, sans-serif;
+}
+p{
+    margin: 0;
+}
+section{
+    padding: 10px 0 ;
+}
+/* Première section */
+
+.first{
+    /* background: black; */
+    margin: 0;
+    padding: 0;
+    background-color: #252444;
+}
+header{
+    height: 50px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    margin: 0;
+}
+li{
+    margin:20px 5%;
+    display: flex;
+    align-items: center;
+}
+.left{
+    margin-left: auto;
+}
+li a {
+    color:#3d9f96
+}
+br{
+    color: #7e7e7e;
+}
+nav img{
+    width: 200px;
+}
+.contenant_image{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -45px;
+    
+}
+.contenant_first{
+    display: flex;
+    justify-items: center;
+}
+.first_text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Promote{
+    font-family: 'Raleway', Arial, sans-serif ;
+    /* font-family: */
+    color: #FFFF
+}
+.Green{
+    font-family:  'Open Sans',Arial, sans-serif;
+    color:#3d9f96;
+}
+.sous{
+    font-family: Helvetica, Arial, sans-serif, 'Raleway';
+    color:#FFFF;
+}
+button{
+    color: #FFFF;
+    border: #3d9f96;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #3d9f96;
+}
+.ordinateur{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0%;
+}
+
+
+/* Première section fin */
+@media screen and max-width(660px) {
+
+    
+}
+
+
+/*rso section*/
+.rso{
+    display: flex;
+    color:#3d9f96;
+    text-align: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    /* margin-top: -40px; */
+}
+div img{
+    margin: 0 5px;
+}
+/*finrso section*/
+
+/*section check*/
+.check{
+    text-align: center;
+    margin: 0 20%;
+}
+/*fincheck section*/
+
+/*section app*/
+.logo{
+    display: flex;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+.app{
+    display: flex;
+    margin: 0 22% 0 22%;
+}
+
+ /* TOOOOOOOOOOOO CKKKKKKKKKKKKKECCCCCCCCCCCCCKKKKKKKKKKKKK*/
+.phone{
+    background-image: url(Archive/assets/img/map_bg.png);
+}
