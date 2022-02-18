@@ -5,6 +5,9 @@ body{
     font-family:  'Open Sans',Arial, sans-serif;
 }
 p{
+    margin: 10 0 ;
+}
+p.lg{
     margin: 0;
 }
 section{
@@ -88,11 +91,6 @@ button{
 }
 
 
-/* Première section fin */
-@media screen and max-width(660px) {
-
-    
-}
 
 
 /*rso section*/
@@ -102,6 +100,7 @@ button{
     text-align: center;
     justify-content: center;
     background-color: #f0f0f0;
+    padding: 30px 0;
     /* margin-top: -40px; */
 }
 div img{
@@ -124,10 +123,111 @@ div img{
 }
 .app{
     display: flex;
+    justify-content: center;
     margin: 0 22% 0 22%;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:250px;
+    background-image: url(Archive/assets/img/image_190px_1.png);
+    /*here we adjuste the size of the background image in order to fit in the div*/
+    background-size: 240px;
+    background-repeat: no-repeat;
+
+}
+.phone div{
+    width:250ppx;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
  /* TOOOOOOOOOOOO CKKKKKKKKKKKKKECCCCCCCCCCCCCKKKKKKKKKKKKK*/
-.phone{
+/* .phone{
     background-image: url(Archive/assets/img/map_bg.png);
+} */
+/* finsection app*/
+
+/*section citation*/
+.citation{
+    background-color:#252444 ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #FFFF;
+}
+ /* TO DOOOOOOOOOOOOO change the circul in white*/
+
+
+ /*section grey*/
+ .grey{
+    background-color: #f0f0f0;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: flex-start;
+ }
+ .screen{
+     width:250px ;
+     height: 400px;
+ }
+ .gris{
+     color: #dfdfdf;
+ }
+.fig{
+    display:flex ;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+}
+figure{
+    margin-left: 0;
+}
+/* finsection grey */
+
+/* section blanche */
+
+
+/* transformation des images en blanc */
+.blanche{
+    padding:0 5%;
+}
+.t_ordi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:400px;
+    background-image: url(Archive/assets/img/image_300px_1.png);
+    /*here we adjuste the size of the background image in order to fit in the div*/
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+.tested{
+    display: flex;
+    justify-content: space-between;
+}
+.tested img{
+    width: 200px;
+}
+.gris2{
+    color: #dfdfdf;
+    width: 400px;
+}
+.grey{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.tt{
+    padding: 0 50px 0 0;
+}
+
+/*footer*/
+footer{
+    display:flex;
+    justify-content: center;
+    margin: 20px 50px;
+}
+.rsofin{
+    margin-left: auto;
 }
