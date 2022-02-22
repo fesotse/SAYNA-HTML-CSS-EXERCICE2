@@ -63,7 +63,9 @@ nav img{
     justify-content: center;
     text-align: center;
 }
-
+.ordinateur img{
+    width:50%;
+}
 .Promote{
     font-family: 'Raleway', Arial, sans-serif ;
     /* font-family: */
@@ -73,9 +75,17 @@ nav img{
     font-family:  'Open Sans',Arial, sans-serif;
     color:#3d9f96;
 }
+.first_text>span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .sous{
     font-family: Helvetica, Arial, sans-serif, 'Raleway';
     color:#FFFF;
+    width: 70%;
+    /* text-align: center; */
 }
 button{
     color: #FFFF;
@@ -144,11 +154,16 @@ div img{
     justify-content: center;
     align-items: center;
 }
-
- /* TOOOOOOOOOOOO CKKKKKKKKKKKKKECCCCCCCCCCCCCKKKKKKKKKKKKK*/
-/* .phone{
+.map{
     background-image: url(Archive/assets/img/map_bg.png);
-} */
+    /*here we adjuste the size of the background image in order to fit in the div*/
+    background-size:contain;
+    background-repeat: no-repeat;
+
+}
+    
+
+ 
 /* finsection app*/
 
 /*section citation*/
@@ -166,8 +181,6 @@ div img{
  .grey{
     background-color: #f0f0f0;
     padding: 50px 5%;
-    display: flex;
-    justify-content: flex-start;
  }
  .screen{
      width:250px ;
@@ -175,6 +188,7 @@ div img{
  }
  .gris{
      color: #dfdfdf;
+     text-justify: center;
  }
 .fig{
     display:flex ;
@@ -188,26 +202,32 @@ figure{
 
 /* section blanche */
 
-
+.blanche{
+    margin: 15px 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /* transformation des images en blanc */
 .blanche{
     padding:0 5%;
 }
-.t_ordi{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:400px;
-    background-image: url(Archive/assets/img/image_300px_1.png);
-    /*here we adjuste the size of the background image in order to fit in the div*/
-    background-size: 300px;
-    background-repeat: no-repeat;
+img.blanchire{
+    filter: brightness(0) invert(1);
 }
+
 .tested{
     display: flex;
     justify-content: space-between;
 }
 .tested img{
+    width: 200px;
+}
+.tested2{
+    display: flex;
+    justify-content: space-between;
+}
+.tested2 img{
     width: 200px;
 }
 .gris2{
@@ -216,12 +236,24 @@ figure{
 }
 .grey{
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 }
 .tt{
     padding: 0 50px 0 0;
 }
-
+.t_ordi  {
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    width: 100%;
+    height: 350px;
+    background-image: url(Archive/assets/img/dzdzd.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.t_ordi figure div {
+    margin-top: 40%;
+}
 /*footer*/
 footer{
     display:flex;
@@ -230,4 +262,57 @@ footer{
 }
 .rsofin{
     margin-left: auto;
+    display: flex;
+    align-self: center;
+}
+
+/*responsive*/
+@media screen and (max-width:900px) {
+    nav>ul {
+       visibility: hidden;  /* we hide this items */
+    }
+    section.app{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    div.map{
+        background:white;
+    }
+    div.map div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.contenant-phone{
+        background-image: url(Archive/assets/img/map_bg.png);
+        background-size:200%;
+    }
+    div.fig{
+        display: block;
+    }
+    div.tested{
+        display:block ;
+    }
+    div.tested>div{
+        text-align: center;
+        padding: 0;
+    }
+    div.tested2{
+        display:flex ;
+        flex-direction: column-reverse;
+    }
+    div.tested2>div{
+        text-align: center;
+        padding: 0;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.rsofin{
+        margin: 0;
+    }
 }
