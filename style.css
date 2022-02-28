@@ -156,9 +156,8 @@ div img{
 }
 .map{
     background-image: url(Archive/assets/img/map_bg.png);
-    /*here we adjuste the size of the background image in order to fit in the div*/
-    background-size:contain;
     background-repeat: no-repeat;
+    background-position: center;
 
 }
     
@@ -275,9 +274,6 @@ footer{
         flex-direction: column;
         justify-content: center;
         text-align: center;
-    }
-    div.map{
-        background:white;
     }
     div.map div{
         display: flex;
